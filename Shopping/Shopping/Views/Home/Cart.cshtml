@@ -1,0 +1,100 @@
+﻿@{
+    if (ViewBag.Cookies == null)
+    {
+        Layout = "_Blogincart";
+    }
+    else
+    {
+        Layout = "_Alogin";
+    }
+
+    ViewData["Username"] = (string)ViewData["username"];
+    ViewData["Title"] = "Home";
+    var products = (List<Product>)ViewData["products"];
+}
+
+@section Scripts {
+    <script src="~/js/cart.js"></script>
+}
+<style>
+    .my-scrollbar {
+        position: relative;
+        height: 450px;
+        overflow: auto;
+    }
+
+    .table-wrapper-scroll-y {
+        display: block;
+    }
+</style>
+
+
+
+
+@{ if (products == null)
+    {
+        <br />
+        <div class="card rounded-3 mb-4 container" style="border-color:white;">
+            <form action="/Login/isLogin" method="get">
+                <input type="hidden" value="/Home/PurchaseList" name="returnURL"></input>
+                <button href="/Home/Index" class="btn btn-outline-primary" style="height: 50px; width:100%">
+                  There is no item in your cart,   Continue Shopping...
+                </button>
+            </form>
+        </div>
+    }
+    else
+    {
+        <div class="table-wrapper-scroll-y my-scrollbar container">
+            @foreach (var item in products)
+            {
+                <div class="card rounded-3 mb-4">
+                    <div class="card-body p-4">
+                        <div class="row d-flex justify-content-between align-items-center">
+                            <div class="col-md-2 col-lg-2 col-xl-1">
+                                <img src="/img/@item.ProductImg" class="img-fluid rounded mx-auto d-block" />
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-xl-3">
+                                <p class="lead fw-normal mb-2">@item.ProductName</p>
+
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+
+
+                                <button type="button" class="btn btn-light increment">+</button>
+
+                                <span id="@item.ProductId" style="padding-top:8px">0</span>
+
+
+
+                                <button type="button" class="btn btn-light decrement">-</button>
+
+                            </div>
+                            <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                                <h5 class="mb-0" id="price @item.ProductId">@item.ProductPrice</h5>
+                            </div>
+                            <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                                <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            }
+
+        </div>
+        <br />
+        <div class="card rounded-3 mb-4 container" style="border-color:white;">
+            <form action="/Login/isLogin" method="get">
+                <input type="hidden" value="/Home/Cart" name="returnURL"></input>
+                <button type="submit" id="checkoutbtn" class="btn btn-primary" style="height: 50px; width:100%">
+
+                    Total Price is <b><span id="totalprice">0</span></b>, Click me to check Out
+                </button>
+            </form>
+        </div>
+    }
+}
+
+
+
