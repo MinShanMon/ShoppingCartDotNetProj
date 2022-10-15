@@ -5,7 +5,7 @@
     public string ProductDesc { get; set; }
     public string ProductImg { get; set; }
     public decimal ProductPrice { get; set; }
-    public int Qty { get; set; }
+    public int ProductRating { get; set; }
 
 }
 

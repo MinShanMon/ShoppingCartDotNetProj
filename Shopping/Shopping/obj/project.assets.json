@@ -459,11 +459,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/soelapyaehtun/Desktop/Shoppping_Updated by travis/Shopping/Shopping/Shopping.csproj",
+      "projectUniqueName": "/Users/soelapyaehtun/Desktop/left gallery rating/Shopping/Shopping/Shopping.csproj",
       "projectName": "Shopping",
-      "projectPath": "/Users/soelapyaehtun/Desktop/Shoppping_Updated by travis/Shopping/Shopping/Shopping.csproj",
+      "projectPath": "/Users/soelapyaehtun/Desktop/left gallery rating/Shopping/Shopping/Shopping.csproj",
       "packagesPath": "/Users/soelapyaehtun/.nuget/packages/",
-      "outputPath": "/Users/soelapyaehtun/Desktop/Shoppping_Updated by travis/Shopping/Shopping/obj/",
+      "outputPath": "/Users/soelapyaehtun/Desktop/left gallery rating/Shopping/Shopping/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/soelapyaehtun/.nuget/NuGet/NuGet.Config"

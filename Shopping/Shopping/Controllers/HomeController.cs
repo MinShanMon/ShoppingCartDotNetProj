@@ -40,10 +40,16 @@ public class HomeController : Controller
         }
         else
         {
+            if (Request.Cookies["SessionId"] != null)
+            {
+                ViewData["username"] = db.GetUserBySession(Request.Cookies["SessionId"]).Username;
+                ViewBag.Cookies = Request.Cookies["SessionId"];
+            }
             //bind search result to view
             ViewData["AllProduct"] = db.SearchProduct(search);
             ViewBag.Cookies = Request.Cookies["SessionId"];
-           // ViewData["username"] = db.GetUserBySession(Request.Cookies["SessionId"].ToString());
+            //ViewData["username"] = db.GetUserBySession(Request.Cookies["SessionId"].ToString());
+      
             ViewData["search"] = search;
 
         }
@@ -73,7 +79,14 @@ public class HomeController : Controller
             }
         if (String.IsNullOrEmpty(productids))
         {
-            return View();
+            if (Request.Cookies["items"] != null)
+            {
+                productids = Request.Cookies["items"];
+            }
+            else
+            {
+                return View();
+            }
         }
         ViewData["products"] = db.RetrieveProduct(productids);
         return View();
@@ -93,7 +106,7 @@ public class HomeController : Controller
     public IActionResult GetStar()
     {
 
-        List<Reviews> nodes = db.GetStar(1);
+        List<Reviews> nodes = db.GetStar(2);
         return Content(JsonSerializer.Serialize(nodes));
     }
 
@@ -101,7 +114,7 @@ public class HomeController : Controller
     public string SetStarRating(int productId, int rating)
     {
 
-        bool status = db.SetStar(1, productId, rating);
+        bool status = db.RatingIsExist(2, productId, rating);
 
         return status ? "success" : "fail";
     }

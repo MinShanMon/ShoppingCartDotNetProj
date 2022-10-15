@@ -19,8 +19,8 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 container">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Hello, @ViewData["Username"]</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +33,7 @@
                         </li>
                         <div class="vl"></div>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="PurchaseList">My Purchaese</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="PurchaseList">My Purchases</a>
                         </li>
                         <div class="vl"></div>
                         <li class="nav-item">
@@ -45,7 +45,7 @@
                         <button class="btn btn-outline-dark" id="cartbtn" asp-controller="Home" asp-action="Cart" type="submit">
                             <i class="bi-cart-fill me-1"></i>
                             Cart
-                            <span class="badge text-white ms-1 rounded-pill" id="totalNum" style="background-color: #98A8F8; ">3</span>
+                            <span class="badge text-white ms-1 rounded-pill" id="totalNum" style="background-color: #98A8F8; ">0</span>
                         </button>
                         <input type="hidden" id="productids" name="productids" />
                     </form>

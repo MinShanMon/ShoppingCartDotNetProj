@@ -40,7 +40,12 @@ body {
     }
 }
 
-/*star*/
+
+
+
+//for login page
+
+
 
 .rating {
     unicode-bidi: bidi-override;
@@ -49,34 +54,88 @@ body {
     margin: auto;
 }
 
-    .rating input {
-        position: absolute;
-        display: none;
-    }
+.rating input {
+    position: absolute;
+    display: none;
+}
 
 
-    .rating label {
-        display: inline-block;
-        font-size: 0;
-    }
+.rating label {
+    display: inline-block;
+    font-size: 0;
+}
 
-    .rating > label:before {
-        position: relative;
-        font: 20px/1 FontAwesome;
-        display: block;
-        content: "\f005";
-        color: #ccc;
-        background: -webkit-linear-gradient(-45deg, #d9d9d9 0%, #b3b3b3 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
+.rating > label:before {
+    position: relative;
+    font: 20px/1 FontAwesome;
+    display: block;
+    content: "\f005";
+    color: #ccc;
+    background: -webkit-linear-gradient(-45deg, #d9d9d9 0%, #b3b3b3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
-    .rating > label:hover:before,
-    .rating > label:hover ~ label:before,
-    .rating > label.selected:before,
-    .rating > label.selected ~ label:before {
-        color: #f0ad4e;
-        background: -webkit-linear-gradient(-45deg, #fcb551 0%, #d69a45 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
+.rating > label:hover:before,
+.rating > label:hover ~ label:before,
+.rating > label.selected:before,
+.rating > label.selected ~ label:before {
+    color: #f0ad4e;
+    background: -webkit-linear-gradient(-45deg, #fcb551 0%, #d69a45 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.rating-star {
+    display: inline-block;
+    width: 75px;
+    height: 15px;
+    margin-top: 5px;
+    background-repeat: no-repeat;
+    background-image: url(/img/star.png);
+    overflow: hidden;
+}
+
+.allstar_10 {
+    background-position: 0px 0px;
+}
+
+.allstar_9 {
+    background-position: 0px -15px;
+}
+
+.allstar_8 {
+    background-position: 0px -30px;
+}
+
+.allstar_7 {
+    background-position: 0px -45px;
+}
+
+.allstar_6 {
+    background-position: 0px -60px;
+}
+
+.allstar_5 {
+    background-position: 0px 0px;
+}
+
+.allstar_4 {
+    background-position: 0px -30px;
+}
+
+.allstar_3 {
+    background-position: 0px -60px;
+}
+
+.allstar_2 {
+    background-position: 0px -90px;
+}
+
+.allstar_1 {
+    background-position: 0px -120px;
+}
+
+.allstar_0 {
+    background-position: 0px -150px;
+}

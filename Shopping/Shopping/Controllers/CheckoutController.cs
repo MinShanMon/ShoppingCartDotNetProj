@@ -17,6 +17,7 @@ namespace Shopping.Controllers
         public CheckoutController(IConfiguration cfg)
         {
             db = new ConnectDB(cfg.GetConnectionString("connection"));
+
         }
 
 

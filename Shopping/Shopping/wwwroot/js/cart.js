@@ -13,6 +13,7 @@
     setProductIds();
     let checkoutbtn = document.getElementById("checkoutbtn");
     checkoutbtn.addEventListener('click', Checkout);
+    removeItem();
 }
 
 function getLastQty() {
@@ -77,6 +78,7 @@ function setProductIds() {
     }
     let elem = document.getElementById("productids");
     elem.value = productids;
+    document.cookie = "items=" + encodeURIComponent(productids) + ";" + "paths=/;";
 }
 
 
@@ -91,13 +93,14 @@ function Increment(event) {
         cart[span.id]++;
     }
     localStorage["cart"] = JSON.stringify(cart);
+    setProductIds()
     getLastQty();
     document.getElementById("totalprice").innerHTML = "$" + GetTotalPrice(span, 1);
 }
 
 function Decrement(event) {
     let span = event.target.previousElementSibling;
-    if (span.innerHTML == 0) {
+    if (span.innerHTML == 1) {
         return;
     }
     span.innerHTML--;
@@ -105,9 +108,7 @@ function Decrement(event) {
     cart["totalQuantity"]--;
 
     cart[span.id]--;
-    if (cart[span.id] === 0) {
-        delete cart[span.id];
-    }
+
     localStorage["cart"] = JSON.stringify(cart);
     setProductIds();
     getLastQty();
@@ -143,4 +144,39 @@ function Checkout() {
     xhr.setRequestHeader("Content-Type", "application/json; charset=utf8");
     let data = JSON.stringify(list);
     xhr.send(data);
+    localStorage.clear();
+    document.cookie = "items = ;expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+}
+
+function removeItem() {
+    var removeCartItemButtons = document.getElementsByClassName('text-danger');
+    for (i = 0; i < removeCartItemButtons.length; i++) {
+        var button = removeCartItemButtons[i];
+        button.addEventListener('click', removeCartItem);
+    }
+}
+
+function removeCartItem(event) {
+    let id = event.target.parentElement.id.substring(2);
+    let cart = JSON.parse(localStorage["cart"]);
+    var pid = parseInt(id);
+    let amount = cart[pid];
+    console.log(amount);
+    cart["totalQuantity"] = cart["totalQuantity"] - amount;
+    let priceelem = document.getElementById("price " + pid)
+    let eachprice = parseInt(priceelem.innerHTML);
+    let removeValue = eachprice * amount;
+    var beforeTotal = parseInt(document.getElementById("totalprice").innerHTML.substring(1));
+    var remainTotal = beforeTotal - removeValue;
+    document.getElementById("totalprice").innerHTML = "$" + remainTotal;
+    console.log(beforeTotal);
+    delete cart[pid];
+    if (cart["totalQuantity"] == 0) {
+        delete cart;
+    }
+
+    localStorage["cart"] = JSON.stringify(cart);
+    getLastQty();
+    setProductIds();
+    event.target.parentNode.parentElement.parentElement.parentElement.parentElement.remove();
 }

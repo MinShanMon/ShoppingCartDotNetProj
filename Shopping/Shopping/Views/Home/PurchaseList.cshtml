@@ -8,36 +8,9 @@
 }
 
 
-<header>
-    <nav class="navbar fixed-top navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-        <div class="container-fluid">
-            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Shopping</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">My Purchases</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <button asp-controller="Home" asp-action="Cart" class="btn btn-outline-dark" type="submit">
-                        <i class="bi-cart-fill me-1"></i>
-                        Cart
-                        <span class="badge bg-dark text-white ms-1 rounded-pill">3</span>
-                    </button>
-                </form>
-            </div>
-        </div>
-    </nav>
-</header>
 
-@foreach (var purhcase in purchasedLists)
+
+@foreach (var purchase in purchasedLists)
 {
 
     <section class="pt-5 pb-5">
@@ -50,30 +23,32 @@
                                 <td border="1" data-th="Product" rowspan="7">
                                     <div class="card">
                                         <!-- Product image-->
-                                        <div class="text-center pt-2"><i class="@purhcase.ProductImg"></i></div>
+                                        <div class="text-center w-25 h-25 mx-auto">
+                                            <img src="/img/@purchase.ProductImg" class="img-fluid rounded mx-auto d-block"></img>
+                                        </div>
                                         <!-- Product details-->
-                                        <div class="card-body p-4">
+                                        <div class="card-body">
                                             <div class="text-center">
                                                 <!-- Product name-->
-                                                <h5 class="fw-bolder h4">@purhcase.ProductName</h5>
-                                                <p class="passage">@purhcase.ProductDesc</p>
+                                                <h5 class="fw-bolder h4">@purchase.ProductName</h5>
+                                                <p class="passage">@purchase.ProductDesc</p>
                                             </div>
                                             <div class="rating d-flex justify-content-center">
 
-                                                <label class="star_@purhcase.ProductId" id="5l">
-                                                    <input class="star" type="radio" name="rating" value="@purhcase.ProductId" id="5" title="5 stars">
+                                                <label class="star_@purchase.ProductId" id="5l">
+                                                    <input class="star" type="radio" name="rating" value="@purchase.ProductId" id="5" title="5 stars">
                                                 </label>
-                                                <label class="star_@purhcase.ProductId" id="4l">
-                                                    <input class="star" type="radio" name="rating" value="@purhcase.ProductId" id="4" title="4 stars">
+                                                <label class="star_@purchase.ProductId" id="4l">
+                                                    <input class="star" type="radio" name="rating" value="@purchase.ProductId" id="4" title="4 stars">
                                                 </label>
-                                                <label class="star_@purhcase.ProductId" id="3l">
-                                                    <input class="star" type="radio" name="rating" value="@purhcase.ProductId" id="3" title="3 stars">
+                                                <label class="star_@purchase.ProductId" id="3l">
+                                                    <input class="star" type="radio" name="rating" value="@purchase.ProductId" id="3" title="3 stars">
                                                 </label>
-                                                <label class="star_@purhcase.ProductId" id="2l">
-                                                    <input class="star" type="radio" name="rating" value="@purhcase.ProductId" id="2" title="2 stars">
+                                                <label class="star_@purchase.ProductId" id="2l">
+                                                    <input class="star" type="radio" name="rating" value="@purchase.ProductId" id="2" title="2 stars">
                                                 </label>
-                                                <label class="star_@purhcase.ProductId" id="1l">
-                                                    <input class="star" type="radio" name="rating" value="@purhcase.ProductId" id="1" title="1 star">
+                                                <label class="star_@purchase.ProductId" id="1l">
+                                                    <input class="star" type="radio" name="rating" value="@purchase.ProductId" id="1" title="1 star">
                                                 </label>
 
                                             </div>
@@ -89,26 +64,20 @@
                                 <td class="h4">Activation Code</td>
                             </tr>
                             <tr>
-                                <td>
+                                <td style="width:50%">
 
                                     <select class="form-select passage" aria-label="Disabled select example">
-
-
-
                                         @foreach (var item in activations)
                                         {
 
-                                            if (item.ProductId == purhcase.ProductId)
+                                            if (item.ProductId == purchase.ProductId)
                                             {
                                                 <option>@item.ActivationCode</option>
                                             }
 
                                         }
 
-
                                     </select>
-
-
 
                                 </td>
                             </tr>
@@ -116,13 +85,14 @@
                                 <td class="h4">Purchase On</td>
                             </tr>
                             <tr>
-                                <td>@purhcase.TimeStamp</td>
+                                <td>@purchase.TimeStamp</td>
+                                
                             </tr>
                             <tr style="background-color: #e3f2fd;">
                                 <td class="h4">Quantity</td>
                             </tr>
                             <tr>
-                                <td>@purhcase.Qty</td>
+                                <td>@purchase.Qty</td>
                             </tr>
                         </tbody>
                     </table>

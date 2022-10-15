@@ -34,7 +34,7 @@ Please insert only userid, timestamp to this table*/
 CREATE TABLE [dbo].[Orders] (
 	[OrderId] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	[UserId] INT NOT NULL FOREIGN KEY REFERENCES Users(UserId),
-	[Timestamp] BIGINT NOT NULL
+	[Timestamp] DATE NOT NULL
 );
 
 CREATE TABLE [dbo].[OrderDetails] (

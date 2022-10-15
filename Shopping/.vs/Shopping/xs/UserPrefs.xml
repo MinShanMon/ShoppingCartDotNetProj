@@ -1,17 +1,40 @@
 ﻿<Properties StartupConfiguration="{42AF437A-A9CB-4FB7-A751-8BBA59EACA2E}|Default">
-  <MonoDevelop.Ide.ItemProperties.Shopping PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Shopping/Views/Home/Cart.cshtml">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Shopping PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Shopping/ConnectDB.cs">
     <Files>
-      <File FileName="Shopping/wwwroot/js/site.js" Line="1" Column="1" />
-      <File FileName="Shopping/wwwroot/js/cart.js" Line="121" Column="23" />
+      <File FileName="Shopping/Controllers/CheckoutController.cs" Line="20" Column="1" />
+      <File FileName="Shopping/ConnectDB.cs" Line="121" Column="43" />
+      <File FileName="Shopping/Views/Home/Index.cshtml" Line="30" Column="6" />
+      <File FileName="Shopping/createDB.sql" Line="36" Column="61" />
+      <File FileName="Shopping/Views/Shared/_Alogin.cshtml" Line="10" Column="94" />
+      <File FileName="Shopping/Views/Shared/_Layout.cshtml" Line="43" Column="129" />
+      <File FileName="Shopping/Views/Shared/_Purchaselist.cshtml" Line="36" Column="71" />
+      <File FileName="Shopping/Views/Home/PurchaseList.cshtml" Line="92" Column="48" />
+      <File FileName="Shopping/wwwroot/css/site.css" Line="142" Column="1" />
+      <File FileName="Shopping/Views/Home/Cart.cshtml" Line="77" Column="68" />
+      <File FileName="Shopping/appsettings.json" Line="10" Column="124" />
+      <File FileName="Shopping/Views/Shared/_Blogincart.cshtml" Line="10" Column="94" />
+      <File FileName="Shopping/Controllers/LoginController.cs" Line="39" Column="1" />
+      <File FileName="Shopping/Controllers/HomeController.cs" Line="91" Column="35" />
+      <File FileName="Shopping/wwwroot/js/login.js" Line="10" Column="25" />
+      <File FileName="Shopping/Views/Login/Index.cshtml" Line="7" Column="42" />
+      <File FileName="Shopping/wwwroot/js/cart.js" Line="16" Column="18" />
       <File FileName="Shopping/wwwroot/js/checkout.js" Line="1" Column="1" />
       <File FileName="Shopping/wwwroot/js/Home.js" Line="1" Column="1" />
-      <File FileName="Shopping/Views/Home/Cart.cshtml" Line="39" Column="82" />
-      <File FileName="Shopping/Views/Shared/_Layout.cshtml" Line="69" Column="8" />
-      <File FileName="Shopping/Views/Shared/_Alogin.cshtml" Line="70" Column="67" />
-      <File FileName="Shopping/Views/Shared/_Login.cshtml" Line="22" Column="67" />
-      <File FileName="Shopping/Views/Home/Index.cshtml" Line="54" Column="52" />
+      <File FileName="Shopping/Views/Shared/_Login.cshtml" Line="16" Column="16" />
+      <File FileName="Shopping/Views/_ViewImports.cshtml" Line="5" Column="1" />
+      <File FileName="Shopping/Models/PurchasedActivation.cs" Line="1" Column="1" />
+      <File FileName="Shopping/Models/PurchasedList.cs" Line="10" Column="18" />
+      <File FileName="Shopping/Program.cs" Line="27" Column="1" />
+      <File FileName="Shopping/Models/Product.cs" Line="12" Column="1" />
+      <File FileName="Shopping/Models/CartDetail.cs" Line="1" Column="1" />
+      <File FileName="Shopping/wwwroot/js/site.js" Line="36" Column="4" />
+      <File FileName="Shopping/wwwroot/js/purchaselist.js" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,17 +42,16 @@
           <Node name="Shopping" expanded="True">
             <Node name="Shopping" expanded="True">
               <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True">
-                  <Node name="Cart.cshtml" selected="True" />
-                </Node>
+                <Node name="Home" expanded="True" />
                 <Node name="Login" expanded="True" />
-                <Node name="Shared" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="img" expanded="True" />
                 <Node name="js" expanded="True" />
               </Node>
-              <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -39,9 +61,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

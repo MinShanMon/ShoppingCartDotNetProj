@@ -7,7 +7,7 @@ public class PurchasedList
     public string ProductDesc { get; set; }
     public string ProductImg { get; set; }
     public decimal ProductPrice { get; set; }
-    public Int64 TimeStamp { get; set; }
+    public string TimeStamp { get; set; }
     public int Qty { get; set; }
 
 }
