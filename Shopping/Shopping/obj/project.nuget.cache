@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5/0iwT1O0ZU1rJAPBUUay9+L9OJPku7UWvPEIxSyBTrLpE6Bhm2ATdpnNicneLXd/es8M6L1dZXOt8SrVce2bg==",
+  "dgSpecHash": "lDRBDs4Eqbsr5KiE2IQkNkiADGD6blQiXuDq3T2NI59T9xz2ZwtcURdmVN+LIA1f0efLoYI+RBV5AzxcB5ymoQ==",
   "success": true,
-  "projectFilePath": "/Users/soelapyaehtun/Desktop/left gallery rating/Shopping/Shopping/Shopping.csproj",
+  "projectFilePath": "/Users/soelapyaehtun/Desktop/final_by_travis_Checkoutfix_by_Ivan/Shopping/Shopping.csproj",
   "expectedPackageFiles": [
     "/Users/soelapyaehtun/.nuget/packages/microsoft.netcore.platforms/3.1.0/microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "/Users/soelapyaehtun/.nuget/packages/microsoft.win32.registry/4.7.0/microsoft.win32.registry.4.7.0.nupkg.sha512",

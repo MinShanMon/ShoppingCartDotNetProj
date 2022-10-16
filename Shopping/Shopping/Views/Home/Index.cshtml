@@ -8,27 +8,17 @@
         Layout = "_Alogin";
 
     }
-}
-@{
-
-
     ViewData["Username"] = (string)ViewData["username"];
-    ViewData["Title"] = "Home";
+    ViewData["Title"] = "Gallery";
     List<Product> products = (List<Product>)ViewData["AllProduct"];
     string searchStr = (string)ViewData["search"];
 
 }
-<style>
-    .my-scrollbar {
-        position: relative;
-        height: 450px;
-        overflow: auto;
-    }
 
-    .table-wrapper-scroll-y {
-        display: block;
-    }
-</style>
+@section Scripts {
+    <script src="~/js/home.js"></script>
+}
+
 
 <div class="form-floating">
     <input name="str" type="search" class="form-control" placeholder="Leave a comment here" id="search_input" onsearch="search()" value="@searchStr"></input>
@@ -37,36 +27,30 @@
 
 
 <!-- Section-->
-<div class="table-wrapper-scroll-y my-scrollbar container">
+
     <section class="py-4">
-
         <div class="container px-4 px-lg-5">
-
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-3 justify-content-center">
-
                 @{
                     @foreach (var item in products)
                     {
                         <div class="col mb-5">
-                            <div class="card h-100" style="border-color: #BCCEF8; ">
+                            <div class="card h-100 cardc">
 
                                 <div class="text-center w-50 h-50 mx-auto">
                                     <img src="/img/@item.ProductImg" class="img-fluid rounded mx-auto d-block" />
                                 </div>
-                                <!-- Product details-->
                                 <div class="card-body p-4">
                                     <div class="text-center">
-                                        <!-- Product name-->
                                         <h5 class="fw-bolder h4">@item.ProductName</h5>
-                                        <!-- Product price-->
+                                        
                                         <p class="passage">@item.ProductDesc</p>
                                             <div class="rating d-flex justify-content-center">
-                                        Users Rating:&nbsp;
+                                         Rating:&nbsp;
                                         <div class="rating-star allstar_@item.ProductRating"></div>
                                     </div>
                                     </div>
-                                </div>
-                                <!-- Product actions-->
+                                </div>   
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                     <div class="text-center" id="@item.ProductId">
                                         <button class="btn btn-outline-dark mt-auto passage" onclick="addToCart(event)">$@item.ProductPrice - Add to cart</button>
@@ -78,12 +62,7 @@
                 }
             </div>
         </div>
-</div>
+
 </section>
 
-
-
-@section Scripts {
-    <script src="~/js/Home.js"></script>
-}
 

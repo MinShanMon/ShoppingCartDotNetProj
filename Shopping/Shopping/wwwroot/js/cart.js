@@ -14,6 +14,16 @@
     let checkoutbtn = document.getElementById("checkoutbtn");
     checkoutbtn.addEventListener('click', Checkout);
     removeItem();
+    setRedirectAction()
+}
+
+function setRedirectAction() {
+    if (getCookie("SessionId") == null) {
+        document.getElementById("isLogin").action = "/Login/isLogin";
+    }
+    else {
+        document.getElementById("checkoutbtn").type = "button";
+    }
 }
 
 function getLastQty() {
@@ -76,8 +86,6 @@ function setProductIds() {
         }
         productids.push(productid);
     }
-    let elem = document.getElementById("productids");
-    elem.value = productids;
     document.cookie = "items=" + encodeURIComponent(productids) + ";" + "paths=/;";
 }
 
@@ -126,7 +134,48 @@ function GetTotalPrice(elem, value) {
 
 
 
+//function Checkout() {
+//    let cart = JSON.parse(localStorage["cart"]);
+//    let list = [];
+//    for (const entry in cart) {
+//        if (entry == "totalQuantity") {
+//            continue;
+//        }
+//        if (cart[entry] == 0) {
+//            continue;
+//        }
+//        let order = { ProductId: entry, Quantity: cart[entry] };
+//        list.push(order);
+//    }
+//    let xhr = new XMLHttpRequest();
+//    xhr.open("POST", "/Checkout/Index/");
+//    xhr.setRequestHeader("Content-Type", "application/json; charset=utf8");
+
+//    xhr.onreadystatechange = function () {
+//        if (this.readyState === XMLHttpRequest.DONE) {
+//            if (this.status !== 200) {
+//                return;
+//            }
+
+//            let data = JSON.parse(this.responseText);
+//            if (data.isOkay === false) {
+//                alert("Error. Please try again.")
+//            }
+//            document.location = "/PurchaseList";
+//        }
+//    }
+
+//    let data = JSON.stringify(list);
+//    xhr.send(data);
+//    localStorage.clear();
+//    document.cookie = "items = ;expires=Thu, 01 Jan 1970 00:00:00 UTC; ";
+//}
+
 function Checkout() {
+    if (getCookie("SessionId") == null) {
+        return;
+    }
+
     let cart = JSON.parse(localStorage["cart"]);
     let list = [];
     for (const entry in cart) {
@@ -142,11 +191,43 @@ function Checkout() {
     let xhr = new XMLHttpRequest();
     xhr.open("POST", "/Checkout/Index/");
     xhr.setRequestHeader("Content-Type", "application/json; charset=utf8");
+
+    xhr.onreadystatechange = function () {
+        if (this.readyState === XMLHttpRequest.DONE) {
+            if (this.status !== 200) {
+                return;
+            }
+
+            let data = JSON.parse(this.responseText);
+            if (data.isOkay === false) {
+                alert("Error. Please try again.")
+            }
+            document.location = "/PurchaseList";
+        }
+    }
+
     let data = JSON.stringify(list);
     xhr.send(data);
     localStorage.clear();
-    document.cookie = "items = ;expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+    document.cookie = "items = ;expires=Thu, 01 Jan 1970 00:00:00 UTC; ";
 }
+
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return null;
+}
+
 
 function removeItem() {
     var removeCartItemButtons = document.getElementsByClassName('text-danger');
@@ -155,6 +236,17 @@ function removeItem() {
         button.addEventListener('click', removeCartItem);
     }
 }
+
+
+
+//do not like this function
+//need to find another way
+function Redirect() {
+    window.location = "https://localhost:7191/Cart";
+}
+
+
+
 
 function removeCartItem(event) {
     let id = event.target.parentElement.id.substring(2);
@@ -171,12 +263,15 @@ function removeCartItem(event) {
     document.getElementById("totalprice").innerHTML = "$" + remainTotal;
     console.log(beforeTotal);
     delete cart[pid];
-    if (cart["totalQuantity"] == 0) {
-        delete cart;
-    }
-
     localStorage["cart"] = JSON.stringify(cart);
     getLastQty();
     setProductIds();
+    if (cart["totalQuantity"] == 0) {
+        delete cart["totalQuantity"];
+        Redirect();
+
+    }
+    localStorage["cart"] = JSON.stringify(cart);
     event.target.parentNode.parentElement.parentElement.parentElement.parentElement.remove();
+
 }

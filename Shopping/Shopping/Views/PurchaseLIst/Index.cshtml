@@ -1,5 +1,5 @@
 ﻿@{
-    Layout = "_Alogin";
+    Layout = "_PurchaseList";
     ViewData["Title"] = "My Purchases";
     List<PurchasedList> purchasedLists = (List<PurchasedList>)ViewData["pruchaseList"];
     List<PurchasedActivation> activations = (List<PurchasedActivation>)ViewData["activities"];
@@ -7,7 +7,9 @@
 
 }
 
-
+@section Scripts {
+    <script src="~/js/purchaselist.js"></script>
+}
 
 
 @foreach (var purchase in purchasedLists)
@@ -17,7 +19,7 @@
         <div class="container">
             <div class="row w-100">
                 <div class="col-lg-12 col-md-12 col-12">
-                    <table border="1" id="shoppingCart" class="table table-condensed table-responsive">
+                    <table id="shoppingCart" class="table table-condensed table-responsive table-borderless">
                         <tbody class="cart-item">
                             <tr class="cart-row align-self-center">
                                 <td border="1" data-th="Product" rowspan="7">
@@ -33,7 +35,8 @@
                                                 <h5 class="fw-bolder h4">@purchase.ProductName</h5>
                                                 <p class="passage">@purchase.ProductDesc</p>
                                             </div>
-                                            <div class="rating d-flex justify-content-center">
+                                            <div class="rating d-flex justify-content-center flex-row-reverse">
+
 
                                                 <label class="star_@purchase.ProductId" id="5l">
                                                     <input class="star" type="radio" name="rating" value="@purchase.ProductId" id="5" title="5 stars">
@@ -51,6 +54,7 @@
                                                     <input class="star" type="radio" name="rating" value="@purchase.ProductId" id="1" title="1 star">
                                                 </label>
 
+
                                             </div>
                                         </div>
                                         <!-- Product actions-->
@@ -60,11 +64,11 @@
                                     </div>
                                 </td>
                             </tr>
-                            <tr style="background-color: #e3f2fd;">
-                                <td class="h4">Activation Code</td>
+                            <tr style="background-color: white;" class="align-middle">
+                                <td class="h5 align-middle" style="padding-bottom:0">Activation Code</td>
                             </tr>
-                            <tr>
-                                <td style="width:50%">
+                            <tr class="align-middle">
+                                <td style="width:50%; padding-top:0" class="border-bottom">
 
                                     <select class="form-select passage" aria-label="Disabled select example">
                                         @foreach (var item in activations)
@@ -81,18 +85,18 @@
 
                                 </td>
                             </tr>
-                            <tr style="background-color: #e3f2fd;">
-                                <td class="h4">Purchase On</td>
+                            <tr style="background-color: white;" class="align-middle">
+                                <td class="h5" style="padding-bottom:0">Purchased On</td>
                             </tr>
-                            <tr>
-                                <td>@purchase.TimeStamp</td>
-                                
+                            <tr class="align-middle">
+                                <td style="padding-top:0" class="border-bottom">@purchase.TimeStamp</td>
+
                             </tr>
-                            <tr style="background-color: #e3f2fd;">
-                                <td class="h4">Quantity</td>
+                            <tr style="background-color: white;" class="align-middle">
+                                <td class="h5" style="padding-bottom:0">Quantity</td>
                             </tr>
-                            <tr>
-                                <td>@purchase.Qty</td>
+                            <tr class="align-middle">
+                                <td style="padding-top:0">@purchase.Qty</td>
                             </tr>
                         </tbody>
                     </table>
@@ -104,8 +108,3 @@
 
 
 
-
-
-@section Scripts {
-    <script src="~/js/purchaselist.js"></script>
-}

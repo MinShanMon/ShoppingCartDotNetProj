@@ -5,22 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Shopping.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/Shopping.styles.css" />
     <script src="https://kit.fontawesome.com/a103fe44a3.js" crossorigin="anonymous"></script>
-    <style>
-        .vl {
-            border-left: 6px solid #98A8F8;
-            height: 40px;
-        }
-    </style>
+
 </head>
 
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 container">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm fixed-top navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Hello, Guest</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -31,26 +26,20 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <div class="vl"></div>
                         <li class="nav-item">
-                            <form class="d-flex" action="/Login/isLogin" method="get">
-                                <input type="hidden" value="/Home/Cart" name="returnURL" />
-                                <button class="btn btn-outline-dark" type="submit">
-                                    <i class="bi-cart-fill me-1"></i>
-                                    Login
-                                   
-                                </button>
+                            <form class="bloginform" action="/Login/isLogin" method="get">
+                                <input type="hidden" value="/Cart" name="returnURL" />
+                                <button class="btn" type="submit">Login</button>
                             </form>
                         </li>
                     </ul>
 
-                    <form class="d-flex" action="/Home/Cart/" method="POST">
-                        <button class="btn btn-outline-dark" id="cartbtn" asp-controller="Home" asp-action="Cart" type="submit">
+                    <form class="d-flex" action="/Cart/" method="POST">
+                        <button class="btn btn-outline-dark" id="cartbtn" asp-controller="Cart" asp-action="Index" type="submit">
                             <i class="bi-cart-fill me-1"></i>
                             Cart
-                            <span class="badge text-white ms-1 rounded-pill" id="totalNum" style="background-color: #98A8F8; ">0</span>
+                            <span class="badge text-white ms-1 rounded-pill spanc" id="totalNum">0</span>
                         </button>
-                        <input type="hidden" id="productids" name="productids" />
                     </form>
 
                 </div>
@@ -59,20 +48,18 @@
     </header>
 
 
-    <div class="container">
+    <div class="container notmain">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
     <footer class="border-top footer text-muted">
-        <p class="text-center" style="text-align: center; color: #98A8F8; ">Copyright &copy; Team#3.com</p>
+        <p class="text-center dfooter">Copyright &copy; Team#3.com</p>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @*<script src="~/js/purchaselist.js" asp-append-version="true"></script>*@
+     
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

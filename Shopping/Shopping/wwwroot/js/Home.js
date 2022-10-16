@@ -1,6 +1,6 @@
 ﻿window.onload = function () {
     getLastQty();
-    getProductIds();
+    setProductIds();
 }
 
 
@@ -10,8 +10,7 @@ function search() {
     window.location.replace("/home/?search=" + str.value);
 }
 
-
-function getProductIds() {
+function setProductIds() {
     let cart = JSON.parse(localStorage["cart"])
     let productids = [];
     for (const productid in cart) {
@@ -20,8 +19,7 @@ function getProductIds() {
         }
         productids.push(productid);
     }
-    let elem = document.getElementById("productids");
-    elem.value = productids;
+    document.cookie = "items=" + encodeURIComponent(productids) + ";" + "paths=/;";
 }
 
 
@@ -62,7 +60,7 @@ function addToCart(event) {
         let userId = localStorage["sessionId"];
         addToCartDB(sessionId, productId);
     }
-    getProductIds();
+    setProductIds();
 }
 
 //get cartqty from localStorage

@@ -1,11 +1,9 @@
 ﻿<Properties StartupConfiguration="{42AF437A-A9CB-4FB7-A751-8BBA59EACA2E}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Shopping PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Shopping/ConnectDB.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Shopping/Controllers/CheckoutController.cs">
     <Files>
       <File FileName="Shopping/Controllers/CheckoutController.cs" Line="20" Column="1" />
       <File FileName="Shopping/ConnectDB.cs" Line="121" Column="43" />
@@ -20,10 +18,10 @@
       <File FileName="Shopping/appsettings.json" Line="10" Column="124" />
       <File FileName="Shopping/Views/Shared/_Blogincart.cshtml" Line="10" Column="94" />
       <File FileName="Shopping/Controllers/LoginController.cs" Line="39" Column="1" />
-      <File FileName="Shopping/Controllers/HomeController.cs" Line="91" Column="35" />
+      <File FileName="Shopping/Controllers/HomeController.cs" Line="34" Column="1" />
       <File FileName="Shopping/wwwroot/js/login.js" Line="10" Column="25" />
       <File FileName="Shopping/Views/Login/Index.cshtml" Line="7" Column="42" />
-      <File FileName="Shopping/wwwroot/js/cart.js" Line="16" Column="18" />
+      <File FileName="Shopping/wwwroot/js/cart.js" Line="129" Column="10" />
       <File FileName="Shopping/wwwroot/js/checkout.js" Line="1" Column="1" />
       <File FileName="Shopping/wwwroot/js/Home.js" Line="1" Column="1" />
       <File FileName="Shopping/Views/Shared/_Login.cshtml" Line="16" Column="16" />
@@ -41,7 +39,9 @@
         <State name="__root__">
           <Node name="Shopping" expanded="True">
             <Node name="Shopping" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="CheckoutController.cs" selected="True" />
+              </Node>
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
@@ -61,5 +61,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Shopping PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

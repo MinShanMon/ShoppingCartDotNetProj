@@ -21,49 +21,34 @@ namespace Shopping.Controllers
         }
 
 
-        /*public IActionResult Index()
-        {
-            /*string sessionId = HttpContext.Session.GetString("sessionid");
-            if (sessionId == null)
-            {
-                return RedirectToAction("Index", "Login");
-            }
-            return View();
-        }*/
-
-
-
-
         //binds local storage data to list of cart detail
-        [HttpPost]
-        public bool Index([FromBody] List<CartDetail> data)
+
+        public IActionResult Index([FromBody] List<CartDetail> data)
         {
-
-            //check if sessionid exists in cookies. If not, redirect to login page.
-            /*string sessionId = HttpContext.Session.GetString("sessionid");
-            if (String.IsNullOrEmpty(sessionId))
+            try
             {
-                return RedirectToAction("Index", "Login");
-            }*/
+                //check if sessionid exists in cookies.
+                if (Request.Cookies["SessionId"] == null)
+                {
+                    return RedirectToAction("Index", "Login");
+                }
 
-            if (Request.Cookies["SessionId"] == null)
-            {
-                return false;
+                //model bind localstorage[cart]
+                //connect to db and insert into order table new record with userid
+                //insert into orderdetails table the orders in the localstorage[cart]
+                //clear localstorage[cart] when successful
+                //redirect to my purchases page
+                User user = db.GetUserBySession(Request.Cookies["SessionId"]);
+                int userid = user.UserId;
+                db.AddOrder(userid, data);
+                return Json(new { isOkay = true });
             }
-
-            //model bind localstorage[cart]
-            //connect to db and insert into order table new record with userid
-            //insert into orderdetails table the orders in the localstorage[cart]
-            //clear localstorage[cart] when successful
-            //redirect to my purchases page
-            User user = db.GetUserBySession(Request.Cookies["SessionId"]);
-            int userid = user.UserId;
-            db.AddOrder(userid, data);
-
-            return true;
-
-         }
-
+            catch (Exception e)
+            {
+                return Json(new { isOkay = false });
+            }
+         
+        }
     }
 }
 

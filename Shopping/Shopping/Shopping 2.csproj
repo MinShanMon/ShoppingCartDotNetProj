@@ -9,15 +9,11 @@
   <ItemGroup>
     <None Remove="System.Data.SqlClient" />
     <None Remove="Views\Login\" />
-    <None Remove="Views\Cart\" />
-    <None Remove="Views\PurchaseLIst\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Login\" />
-    <Folder Include="Views\Cart\" />
-    <Folder Include="Views\PurchaseLIst\" />
   </ItemGroup>
 </Project>

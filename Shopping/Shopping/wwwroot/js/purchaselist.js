@@ -23,7 +23,7 @@ function dbrestore() {
 
 function dbGetStar() {
     let ajax = new XMLHttpRequest();
-    ajax.open("GET", "/Home/GetStar");
+    ajax.open("GET", "/PurchaseList/GetStar");
 
     ajax.onreadystatechange = function () {
         if (this.readyState == XMLHttpRequest.DONE) {
@@ -64,7 +64,7 @@ function onStarClick(event) {
 
 function SetStarRating(ProductId, Rating) {
     let ajax = new XMLHttpRequest();
-    ajax.open("POST", "/Home/SetStarRating");
+    ajax.open("POST", "/PurchaseList/SetStarRating");
     ajax.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
     ajax.onreadystatechange = function () {

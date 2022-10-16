@@ -21,6 +21,9 @@ body {
     font-size: 100px;
 }
 
+.notmain {
+    margin-top: 75px;
+}
 
 @media only screen and (max-width: 400px) {
     .icon {
@@ -138,4 +141,74 @@ body {
 
 .allstar_0 {
     background-position: 0px -150px;
+}
+
+.ppbtn {
+    padding-top: 10px;
+}
+
+.vl {
+    border-left: 2px solid #98A8F8;
+    height: 40px;
+}
+
+.cart-cs {
+    border-color: white;
+}
+
+.cbtn {
+    height: 50px;
+    width: 100%;
+}
+
+.cspan {
+    padding-top: 8px
+}
+
+.cardc {
+    border-color: #BCCEF8;
+}
+
+.lsection {
+    background-color: #ffffff;
+}
+
+.lcard {
+    border-radius: 1rem;
+    border-color: #98A8F8;
+}
+
+.lhf {
+    letter-spacing: 1px;
+}
+
+.alg {
+    margin-left: 5pc;
+    border-color: #98A8F8;
+}
+
+.spanc {
+    background-color: #98A8F8;
+}
+
+.dfooter {
+    text-align: center;
+    color: #98A8F8;
+}
+
+.npadding {
+    padding: 8px 10px 8px 10px;
+}
+
+.counthe {
+    padding: 8px 10px 8px 10px;
+}
+
+.bloginform {
+    padding-top: 1px
+}
+
+
+.dangera {
+    text-decoration: none;
 }

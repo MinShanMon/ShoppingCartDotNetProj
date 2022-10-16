@@ -31,7 +31,18 @@ namespace Shopping.Controllers
 
         }
 
-   
+        public IActionResult isLogin2(string returnURL)
+        {
+            if (Request.Cookies["SessionId"] != null)
+            {
+                return RedirectToAction("Index", "PurchaseList");
+            }
+
+            return RedirectToAction("Index", new RouteValueDictionary(new { controller = "Login", Action = "Index", returnURL = returnURL }));
+
+        }
+
+
 
         //[HttpPost]
         public IActionResult Index(string username, string password, string returnURL)
@@ -46,7 +57,7 @@ namespace Shopping.Controllers
                     string sessionId = db.AddSession(user.UserId);
 
                     CookieOptions options = new CookieOptions();
-                    options.Expires = DateTime.Now.AddDays(2);
+                    options.Expires = DateTime.Now.AddDays(1);
                     Response.Cookies.Append("SessionId", sessionId, options);
 
                     if (!string.IsNullOrEmpty(returnURL))
@@ -59,8 +70,18 @@ namespace Shopping.Controllers
                     }
 
                 }
+                else
+                {
+                    ViewBag.loginErr = "Your Username or Password is incorrect. Please try again.";
+                }
             }
-            ViewBag.loginErr = "Your Username or Password is incorrect. Please try again.";
+
+            if (username != null)
+            {
+                ViewBag.loginErr = "Your Username or Password is incorrect. Please try again.";
+            }
+
+
             ViewBag.param = returnURL;
             return View();
         }

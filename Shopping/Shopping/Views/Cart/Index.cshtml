@@ -1,0 +1,90 @@
+﻿@{
+    if (ViewBag.Cookies == null)
+    {
+        Layout = "_Blogincart";
+    }
+    else
+    {
+        Layout = "_Alogin";
+    }
+
+    ViewData["Username"] = (string)ViewData["username"];
+    
+    ViewData["Title"] = "Home";
+    var products = (List<Product>)ViewData["products"];
+}
+
+@section Scripts {
+    <script src="~/js/cart.js"></script>
+}
+
+
+@{ if (products == null)
+    {
+        <br />
+        <div class="card rounded-3 mb-4 container cart-cs">
+
+           
+                <a href="/Home/" class="btn btn-outline-primary cbtn ppbtn" >
+                    Your cart is currently empty. Continue Shopping.
+                </a>
+          
+
+        </div>
+    }
+    else
+    {
+        <div class="table-wrapper-scroll-y my-scrollbar container">
+            @foreach (var item in products)
+            {
+                <div class="card rounded-3 mb-4">
+                    <div class="card-body p-4">
+                        <div class="row d-flex justify-content-between align-items-center">
+                            <div class="col-md-2 col-lg-2 col-xl-1">
+                                <img src="/img/@item.ProductImg" class="img-fluid rounded mx-auto d-block" />
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-xl-3">
+                                <p class="lead fw-normal mb-2">@item.ProductName</p>
+
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+
+
+                                <button type="button" class="btn btn-light increment">+</button>
+
+                                <div id="@item.ProductId" class="counthe">0</div>
+
+
+
+                                <button type="button" class="btn btn-light decrement">-</button>
+
+                            </div>
+                            <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1 h5">
+                                $<span class="mb-0" id="price @item.ProductId">@item.ProductPrice</span>
+                            </div>
+                            <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                                <a class="text-danger" id="d_@item.ProductId"><i class="fas fa-trash fa-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            }
+
+        </div>
+        <br />
+        <div class="card rounded-3 mb-4 container cart-cs">
+            <form method="get" id="isLogin">
+                <button type="submit" id="checkoutbtn" class="btn btn-primary cbtn ppbtn">
+                    Total Price is <b><span id="totalprice">0</span></b>, Proceed to Checkout
+                </button>
+                <input type="hidden" value="/Cart" name="returnURL">
+            </form>
+     
+
+        </div>
+    }
+}
+
+
+

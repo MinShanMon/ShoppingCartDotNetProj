@@ -43,9 +43,6 @@ namespace Shopping
             return sessionId;
         }
 
-
-
-
         public User GetUserByUsername(string username)
         {
             User user = null;
@@ -79,9 +76,6 @@ namespace Shopping
             return user;
         }
 
-
-
-
         public bool RemoveSession(string sessionId)
         {
             bool status = false;
@@ -106,8 +100,6 @@ namespace Shopping
 
             return status;
         }
-
-
 
         public User GetUserBySession(string sessionId)
         {
@@ -144,9 +136,47 @@ namespace Shopping
             return user;
         }
 
-       
+        public bool RemoveUserCart(int productId, int quantity)
+        {
+            bool sucessRemove = false;
+            using (SqlConnection connect = new SqlConnection(connectionString))
+            {
+                connect.Open();
+                string query = String.Format(@"Delete From UserCart Where ProductId = '{0}' and Quantity = '{1}'
+                 )", productId, quantity);
 
-       
+                using (SqlCommand cmd = new SqlCommand(query, connect))
+                {
+                    if (cmd.ExecuteNonQuery() == 1)
+                    {
+                        sucessRemove = true;
+                    }
+                    connect.Close();
+                }
+                return sucessRemove;
+            }
+        }
+
+        public bool AddUserCart(int userId, int productId, int quantity)
+        {
+            bool sucessAdd = false;
+            using (SqlConnection connect = new SqlConnection(connectionString))
+            {
+                connect.Open();
+                string query = String.Format(@"INSERT INTO UserCart(UserId, ProductId, Quantity) VALUES
+                 ('{0}','{1}','{2}')", userId, productId, quantity);
+
+                using (SqlCommand cmd = new SqlCommand(query, connect))
+                {
+                    if (cmd.ExecuteNonQuery() == 1)
+                    {
+                        sucessAdd = true;
+                    }
+                    connect.Close();
+                }
+                return sucessAdd;
+            }
+        }
         public List<Product> RetrieveProduct()
         {
             List<Product> products = new List<Product> { };
@@ -175,14 +205,10 @@ namespace Shopping
                     };
                     products.Add(product);
                 }
-
-                conn.Close();
             }
             return products;
         }
 
-
-     
 
         public int rating(int productid)
         {
@@ -208,20 +234,16 @@ namespace Shopping
                     }
                     return 0;
                 }
-
-                conn.Close();
             }
             return 0;
         }
-
-
 
         public List<Product> RetrieveProduct(string pids)
         {
 
             if(pids == "")
             {
-                return null;
+
             }
             List<Product> products = new List<Product> { };
             using (SqlConnection conn = new SqlConnection(this.connectionString))
@@ -243,12 +265,9 @@ namespace Shopping
                     };
                     products.Add(product);
                 }
-                conn.Close();
             }
             return products;
         }
-
-
 
         public List<Product> SearchProduct(string input)
         {
@@ -256,10 +275,9 @@ namespace Shopping
             using (SqlConnection conn = new SqlConnection(this.connectionString))
             {
                 conn.Open();
-                input = input.Replace("'", "");
                 string sql = @"select * from products where ProductName like '%"+input +"%'or ProductDesc like '%"+ input+"%'";
-
                 SqlCommand cmd = new SqlCommand(sql, conn);
+
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
@@ -274,12 +292,63 @@ namespace Shopping
                     };
                     products.Add(product);
                 }
-                conn.Close();
             }
             return products;
         }
 
-      
+        //public List<PurchasedList> PurchasedList(int userId)
+        //{
+        //    List<PurchasedList> PurchasedLists = new List<PurchasedList> { };
+        //    using (SqlConnection conn = new SqlConnection(this.connectionString))
+        //    {
+        //        conn.Open();
+        //        string sql = @"Select p.ProductId,p.ProductName,p.ProductDesc,p.ProductImg,p.ProductPrice,ac.ActivationCode,od.Quantity,o.Timestamp
+        //                        From OrderDetails od
+        //                        inner join Products p
+        //                        On od.ProductId =p.ProductId
+        //                        inner join ActivationCodeDetails ac
+        //                        On od.OrderId =ac.OrderId and od.ProductId=ac.ProductId
+        //                        inner join Orders o
+        //                        ON o.OrderId=od.OrderId
+        //                        where UserId=" + userId;
+        //        SqlCommand cmd = new SqlCommand(sql, conn);
+
+        //        SqlDataReader reader = cmd.ExecuteReader();
+        //        while (reader.Read())
+        //        {
+        //            int productId = (int)reader["ProductId"];
+        //            PurchasedList PurchasedList = new PurchasedList()
+        //            {
+        //                ProductId = (int)reader["ProductId"],
+        //                ProductName = (string)reader["ProductName"],
+        //                ProductDesc = (string)reader["ProductDesc"],
+        //                ProductImg = (string)reader["ProductImg"],
+        //                ProductPrice = (decimal)reader["ProductPrice"],
+        //                ActivationCode = new List<Guid> { (Guid)reader["ActivationCode"] },
+        //                Timestamp = (long)reader["Timestamp"],
+        //                Qty = (int)reader["Quantity"],
+        //            };
+        //            bool flag = false;
+        //            foreach (PurchasedList passPurchasedList in PurchasedLists)
+        //            {
+        //                if (passPurchasedList.ProductId == PurchasedList.ProductId && passPurchasedList.Timestamp == PurchasedList.Timestamp)
+        //                {
+        //                    passPurchasedList.ActivationCode.Add(PurchasedList.ActivationCode[0]);
+        //                    flag = true;
+        //                    break;
+        //                }
+        //            }
+        //            if (!flag)
+        //            {
+        //                PurchasedLists.Add(PurchasedList);
+        //            }
+
+        //        }
+        //    }
+        //    return PurchasedLists;
+        //}
+
+
 
 
         public bool AddOrder(int userid, List<CartDetail> cartDetails)
@@ -329,12 +398,12 @@ namespace Shopping
                 }
                 
                 return true;
-
-                conn.Close();
             }
         }
 
        
+
+
         public List<PurchasedList> RetrievePurchase(int userId)
         {
             List<PurchasedList> products = new List<PurchasedList>();
@@ -358,7 +427,7 @@ namespace Shopping
                         {
                             if (pdt.ProductId == currproductid)
                             {
-                                pdt.Qty += (int)reader["Quantity"];
+                                pdt.Qty++;
                                 break;
                             }
                         }
@@ -386,8 +455,6 @@ namespace Shopping
             return products;
         }
 
-
-
         public List<PurchasedActivation> RetrieveActivations(int userId)
         {
             List<PurchasedActivation> purchaseds = new List<PurchasedActivation>();
@@ -414,8 +481,6 @@ namespace Shopping
             return purchaseds;
         }
 
-
-
         public bool RatingIsExist(int cid, int pid, int rid)
         {
             using (SqlConnection conn = new SqlConnection(this.connectionString))
@@ -437,20 +502,18 @@ namespace Shopping
                         }
                     }
                 }
-                conn.Close();
             }
         }
 
-
         public bool ReviewProduct(int userId, int ProductId, int Rating)
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                conn.Open();
+                connection.Open();
                 string sql = @"INSERT INTO Reviews
                             VALUES (" + userId + "," + ProductId + "," + Rating + ")";
 
-                SqlCommand cmd = new SqlCommand(sql, conn);
+                SqlCommand cmd = new SqlCommand(sql, connection);
 
                 if (cmd.ExecuteNonQuery() == 1)
                 {
@@ -460,8 +523,9 @@ namespace Shopping
                 {
                     return false;
                 }
-                conn.Close();
+
             }
+
         }
 
         public bool UpdateStar(int cid, int pid, int rid)
@@ -482,7 +546,6 @@ namespace Shopping
             }
             return status;
         }
-
 
         public List<Reviews> GetStar(int UserId)
         {
@@ -512,11 +575,16 @@ namespace Shopping
                         }
                     }
                 }
+
                 conn.Close();
             }
+
+
             return stars;
+
         }
     }
+
 
 }
 

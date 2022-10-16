@@ -56,22 +56,3 @@ CREATE TABLE [dbo].[Reviews] (
 	[Rating] INT NOT NULL,
 	CONSTRAINT PK_Review PRIMARY KEY (UserId, ProductId)
 );
-
-
-INSERT INTO dbo.[Users] VALUES
-    (N'travis',N'travis'),
-	(N'ivan',N'ivan'),
-	(N'oscar',N'oscar'),
-    (N'lynn',N'lynn'),
-    (N'lexi',N'lexi'),
-    (N'chilei',N'chilei')
-
-
-INSERT INTO [dbo].[Products]
-VALUES 
-('.NET Charts', 'Brings powerful charting capabilities to your .NET applications.','charts.png', 99.00),
-('.NET PayPal', 'Integrate your .NET apps with PayPal the easy way!', 'paypal.png', 69.00),
-('.NET ML', 'Supercharged .NET machine learning libraries.', 'ml.png', 299.00),
-('.NET Analytics', 'Performs data mining and analytics easily in .NET.', 'analytics.png',299.00),
-('.NET Logger', 'Logs and aggregates events easily in your .NET apps.', 'logger.png', 49.00),
-('.NET Numerics', 'Powerful numerical methods for your .NET simulations.', 'numerics.png', 199.00);
