@@ -31,18 +31,6 @@ namespace Shopping.Controllers
 
         }
 
-        public IActionResult isLogin2(string returnURL)
-        {
-            if (Request.Cookies["SessionId"] != null)
-            {
-                return RedirectToAction("Index", "PurchaseList");
-            }
-
-            return RedirectToAction("Index", new RouteValueDictionary(new { controller = "Login", Action = "Index", returnURL = returnURL }));
-
-        }
-
-
 
         //[HttpPost]
         public IActionResult Index(string username, string password, string returnURL)

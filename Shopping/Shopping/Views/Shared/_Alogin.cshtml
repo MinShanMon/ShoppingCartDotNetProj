@@ -30,7 +30,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="PurchaseList" asp-action="Index">My Purchases</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Logout" asp-action="Index">Logout</a>
+                            <a class="nav-link text-dark" onclick="clearLocal()" asp-area="" asp-controller="Logout" asp-action="Index">Logout</a>
                         </li>
                     </ul>
 
@@ -59,6 +59,12 @@
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function clearLocal() {
+            localStorage.clear();
+        }
+    </script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>

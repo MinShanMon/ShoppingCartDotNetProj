@@ -12,99 +12,118 @@
 }
 
 
-@foreach (var purchase in purchasedLists)
-{
-
-    <section class="pt-5 pb-5">
-        <div class="container">
-            <div class="row w-100">
-                <div class="col-lg-12 col-md-12 col-12">
-                    <table id="shoppingCart" class="table table-condensed table-responsive table-borderless">
-                        <tbody class="cart-item">
-                            <tr class="cart-row align-self-center">
-                                <td border="1" data-th="Product" rowspan="7">
-                                    <div class="card">
-                                        <!-- Product image-->
-                                        <div class="text-center w-25 h-25 mx-auto">
-                                            <img src="/img/@purchase.ProductImg" class="img-fluid rounded mx-auto d-block"></img>
-                                        </div>
-                                        <!-- Product details-->
-                                        <div class="card-body">
-                                            <div class="text-center">
-                                                <!-- Product name-->
-                                                <h5 class="fw-bolder h4">@purchase.ProductName</h5>
-                                                <p class="passage">@purchase.ProductDesc</p>
-                                            </div>
-                                            <div class="rating d-flex justify-content-center flex-row-reverse">
 
 
-                                                <label class="star_@purchase.ProductId" id="5l">
-                                                    <input class="star" type="radio" name="rating" value="@purchase.ProductId" id="5" title="5 stars">
-                                                </label>
-                                                <label class="star_@purchase.ProductId" id="4l">
-                                                    <input class="star" type="radio" name="rating" value="@purchase.ProductId" id="4" title="4 stars">
-                                                </label>
-                                                <label class="star_@purchase.ProductId" id="3l">
-                                                    <input class="star" type="radio" name="rating" value="@purchase.ProductId" id="3" title="3 stars">
-                                                </label>
-                                                <label class="star_@purchase.ProductId" id="2l">
-                                                    <input class="star" type="radio" name="rating" value="@purchase.ProductId" id="2" title="2 stars">
-                                                </label>
-                                                <label class="star_@purchase.ProductId" id="1l">
-                                                    <input class="star" type="radio" name="rating" value="@purchase.ProductId" id="1" title="1 star">
-                                                </label>
+@{ if (purchasedLists.Count() == 0)
+    {
+        <br />
+        <div class="card rounded-3 mb-4 container cart-cs">
 
 
-                                            </div>
-                                        </div>
-                                        <!-- Product actions-->
-                                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                            <div class="text-center"><a class="btn btn-outline-dark mt-auto passage" href="#">Download</a></div>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr style="background-color: white;" class="align-middle">
-                                <td class="h5 align-middle" style="padding-bottom:0">Activation Code</td>
-                            </tr>
-                            <tr class="align-middle">
-                                <td style="width:50%; padding-top:0" class="border-bottom">
+            <a href="/Home/" class="btn btn-outline-primary cbtn ppbtn">
+               You have not purchased anything, Continue Shopping...
+            </a>
 
-                                    <select class="form-select passage" aria-label="Disabled select example">
-                                        @foreach (var item in activations)
-                                        {
 
-                                            if (item.ProductId == purchase.ProductId)
-                                            {
-                                                <option>@item.ActivationCode</option>
-                                            }
-
-                                        }
-
-                                    </select>
-
-                                </td>
-                            </tr>
-                            <tr style="background-color: white;" class="align-middle">
-                                <td class="h5" style="padding-bottom:0">Purchased On</td>
-                            </tr>
-                            <tr class="align-middle">
-                                <td style="padding-top:0" class="border-bottom">@purchase.TimeStamp</td>
-
-                            </tr>
-                            <tr style="background-color: white;" class="align-middle">
-                                <td class="h5" style="padding-bottom:0">Quantity</td>
-                            </tr>
-                            <tr class="align-middle">
-                                <td style="padding-top:0">@purchase.Qty</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
         </div>
-    </section>
-}
+    }
+    else
+    {
+
+        @foreach (var purchase in purchasedLists)
+            {
+
+            <section class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row w-100">
+                        <div class="col-lg-12 col-md-12 col-12">
+                            <table id="shoppingCart" class="table table-condensed table-responsive table-borderless">
+                                <tbody class="cart-item">
+                                    <tr class="cart-row align-self-center">
+                                        <td border="1" data-th="Product" rowspan="7">
+                                            <div class="card">
+                                                <!-- Product image-->
+                                                <div class="text-center w-25 h-25 mx-auto">
+                                                    <img src="/img/@purchase.ProductImg" class="img-fluid rounded mx-auto d-block"></img>
+                                                </div>
+                                                <!-- Product details-->
+                                                <div class="card-body">
+                                                    <div class="text-center">
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder h4">@purchase.ProductName</h5>
+                                                        <p class="passage">@purchase.ProductDesc</p>
+                                                    </div>
+                                                    <div class="rating d-flex justify-content-center flex-row-reverse">
 
 
+                                                        <label class="star_@purchase.ProductId" id="5l">
+                                                            <input class="star" type="radio" name="rating" value="@purchase.ProductId" id="5" title="5 stars">
+                                                        </label>
+                                                        <label class="star_@purchase.ProductId" id="4l">
+                                                            <input class="star" type="radio" name="rating" value="@purchase.ProductId" id="4" title="4 stars">
+                                                        </label>
+                                                        <label class="star_@purchase.ProductId" id="3l">
+                                                            <input class="star" type="radio" name="rating" value="@purchase.ProductId" id="3" title="3 stars">
+                                                        </label>
+                                                        <label class="star_@purchase.ProductId" id="2l">
+                                                            <input class="star" type="radio" name="rating" value="@purchase.ProductId" id="2" title="2 stars">
+                                                        </label>
+                                                        <label class="star_@purchase.ProductId" id="1l">
+                                                            <input class="star" type="radio" name="rating" value="@purchase.ProductId" id="1" title="1 star">
+                                                        </label>
 
+
+                                                    </div>
+                                                </div>
+                                                <!-- Product actions-->
+                                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto passage" href="#">Download</a></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr style="background-color: white;" class="align-middle">
+                                        <td class="h5 align-middle" style="padding-bottom:0">Activation Code</td>
+                                    </tr>
+                                    <tr class="align-middle">
+                                        <td style="width:50%; padding-top:0" class="border-bottom">
+
+                                            <select class="form-select passage" aria-label="Disabled select example">
+                                                @foreach (var item in activations)
+                                                    {
+
+                                                        if (item.ProductId == purchase.ProductId)
+                                                        {
+                                                        <option>@item.ActivationCode</option>
+                                                        }
+
+                                                    }
+
+                                            </select>
+
+                                        </td>
+                                    </tr>
+                                    <tr style="background-color: white;" class="align-middle">
+                                        <td class="h5" style="padding-bottom:0">Purchased On</td>
+                                    </tr>
+                                    <tr class="align-middle">
+                                        <td style="padding-top:0" class="border-bottom">@purchase.TimeStamp</td>
+
+                                    </tr>
+                                    <tr style="background-color: white;" class="align-middle">
+                                        <td class="h5" style="padding-bottom:0">Quantity</td>
+                                    </tr>
+                                    <tr class="align-middle">
+                                        <td style="padding-top:0">@purchase.Qty</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            }
+
+
+        }
+    }

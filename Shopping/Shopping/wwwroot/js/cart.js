@@ -86,7 +86,7 @@ function setProductIds() {
         }
         productids.push(productid);
     }
-    document.cookie = "items=" + encodeURIComponent(productids) + ";" + "paths=/;";
+    document.cookie = "items=" + encodeURIComponent(productids) + ";" + "paths=/";
 }
 
 

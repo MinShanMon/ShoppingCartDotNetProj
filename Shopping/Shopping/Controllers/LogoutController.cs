@@ -29,6 +29,8 @@ namespace ShoppingWebsite.Controllers
                 // ask client to remove its cookie so that it won't sent
                 // it back next time
                 Response.Cookies.Delete("SessionId");
+                Response.Cookies.Delete("items");
+
             }
 
             return RedirectToAction("Index", "Login");
