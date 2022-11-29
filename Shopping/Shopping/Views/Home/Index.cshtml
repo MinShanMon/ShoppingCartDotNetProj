@@ -6,9 +6,11 @@
     else
     {
         Layout = "_Alogin";
+        string username = (string)ViewData["username"];
+        ViewData["Username"] = char.ToUpper(username[0]) + username.Substring(1);
 
     }
-    ViewData["Username"] = (string)ViewData["username"];
+   
     ViewData["Title"] = "Gallary";
     List<Product> products = (List<Product>)ViewData["AllProduct"];
     string searchStr = (string)ViewData["search"];

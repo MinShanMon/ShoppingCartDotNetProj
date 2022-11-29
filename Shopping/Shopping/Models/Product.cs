@@ -6,6 +6,7 @@
     public string ProductImg { get; set; }
     public decimal ProductPrice { get; set; }
     public int ProductRating { get; set; }
+   
 
 }
 

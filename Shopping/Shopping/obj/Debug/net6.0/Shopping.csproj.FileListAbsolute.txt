@@ -726,3 +726,40 @@
 /Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/obj/Debug/net6.0/Shopping.pdb
 /Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/obj/Debug/net6.0/Shopping.genruntimeconfig.cache
 /Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/obj/Debug/net6.0/ref/Shopping.dll
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/bin/Debug/net6.0/appsettings.Development.json
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/bin/Debug/net6.0/appsettings.json
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/bin/Debug/net6.0/Shopping.staticwebassets.runtime.json
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/bin/Debug/net6.0/Shopping
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/bin/Debug/net6.0/Shopping.deps.json
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/bin/Debug/net6.0/Shopping.runtimeconfig.json
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/bin/Debug/net6.0/Shopping.dll
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/bin/Debug/net6.0/Shopping.pdb
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/bin/Debug/net6.0/System.Data.SqlClient.dll
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/bin/Debug/net6.0/runtimes/win-arm64/native/sni.dll
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/bin/Debug/net6.0/runtimes/win-x64/native/sni.dll
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/bin/Debug/net6.0/runtimes/win-x86/native/sni.dll
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/bin/Debug/net6.0/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/Shopping.csproj.AssemblyReference.cache
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/Shopping.GeneratedMSBuildEditorConfig.editorconfig
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/Shopping.AssemblyInfoInputs.cache
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/Shopping.AssemblyInfo.cs
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/Shopping.csproj.CoreCompileInputs.cache
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/Shopping.MvcApplicationPartsAssemblyInfo.cache
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/Shopping.RazorAssemblyInfo.cache
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/Shopping.RazorAssemblyInfo.cs
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/staticwebassets.build.json
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/staticwebassets.development.json
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/scopedcss/Views/Shared/_Alogin.cshtml.rz.scp.css
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/scopedcss/Views/Shared/_Blogincart.cshtml.rz.scp.css
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/scopedcss/Views/Shared/_Login.cshtml.rz.scp.css
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/scopedcss/Views/Shared/_PurchaseList.cshtml.rz.scp.css
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/scopedcss/bundle/Shopping.styles.css
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/scopedcss/projectbundle/Shopping.bundle.scp.css
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/Shopping.csproj.CopyComplete
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/Shopping.dll
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/refint/Shopping.dll
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/Shopping.pdb
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/Shopping.genruntimeconfig.cache
+/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/ref/Shopping.dll

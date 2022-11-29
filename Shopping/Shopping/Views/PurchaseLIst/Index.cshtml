@@ -1,9 +1,11 @@
 ﻿@{
     Layout = "_PurchaseList";
+    string username = (string)ViewData["username"];
+    ViewData["Username"] = char.ToUpper(username[0]) + username.Substring(1);
     ViewData["Title"] = "My Purchases";
     List<PurchasedList> purchasedLists = (List<PurchasedList>)ViewData["pruchaseList"];
     List<PurchasedActivation> activations = (List<PurchasedActivation>)ViewData["activities"];
-
+    int i = 0;
 
 }
 
@@ -11,7 +13,7 @@
     <script src="~/js/purchaselist.js"></script>
 }
 
-
+@{ purchasedLists.Reverse(); }
 
 
 @{ if (purchasedLists.Count() == 0)
@@ -21,7 +23,7 @@
 
 
             <a href="/Home/" class="btn btn-outline-primary cbtn ppbtn">
-               You have not purchased anything, Continue Shopping...
+                You have not purchased anything, Continue Shopping....
             </a>
 
 
@@ -31,12 +33,13 @@
     {
 
         @foreach (var purchase in purchasedLists)
-            {
+        {
+
 
             <section class="pt-5 pb-5">
                 <div class="container">
                     <div class="row w-100">
-                        <div class="col-lg-12 col-md-12 col-12">
+                        <div class="col-lg-12 col-md-12 col-12" id="rload">
                             <table id="shoppingCart" class="table table-condensed table-responsive table-borderless">
                                 <tbody class="cart-item">
                                     <tr class="cart-row align-self-center">
@@ -86,23 +89,63 @@
                                         <td class="h5 align-middle" style="padding-bottom:0">Activation Code</td>
                                     </tr>
                                     <tr class="align-middle">
-                                        <td style="width:50%; padding-top:0" class="border-bottom">
 
-                                            <select class="form-select passage" aria-label="Disabled select example">
-                                                @foreach (var item in activations)
-                                                    {
 
-                                                        if (item.ProductId == purchase.ProductId)
+
+                                        @foreach (var item in activations)
+                                        {
+                                            if (item.ProductId == purchase.ProductId && item.TimeStamp == purchase.TimeStamp)
+                                            {
+                                                i++;
+                                            }
+                                        }
+
+
+
+                                        @if (i == 1)
+                                        {
+                                            <td style="width:50%; padding-top:0" class="border-bottom">
+
+                                                <ul class="list-group list-group-flush">
+                                                    @foreach (var item in activations)
                                                         {
-                                                        <option>@item.ActivationCode</option>
+
+                                                            if (item.ProductId == purchase.ProductId && item.TimeStamp == purchase.TimeStamp)
+                                                            {
+
+                                                            <li class="list-group-item border border-gray rounded">@item.ActivationCode</li>
+
                                                         }
 
                                                     }
 
-                                            </select>
+                                                </ul>
+                                            </td>
+                                        }
+                                        else
+                                        {
 
-                                        </td>
+                                            <td style="width:50%; padding-top:0" class="border-bottom">
+
+                                                <select class="form-select passage" aria-label="Disabled select example">
+                                                    @foreach (var item in activations)
+                                                        {
+
+                                                            if (item.ProductId == purchase.ProductId && item.TimeStamp == purchase.TimeStamp)
+                                                            {
+                                                            <option>@item.ActivationCode</option>
+                                                        }
+
+                                                    }
+
+                                                </select>
+                                            </td>
+
+                                        }
+
+
                                     </tr>
+                                    @{ i = 0; }
                                     <tr style="background-color: white;" class="align-middle">
                                         <td class="h5" style="padding-bottom:0">Purchased On</td>
                                     </tr>
@@ -114,7 +157,7 @@
                                         <td class="h5" style="padding-bottom:0">Quantity</td>
                                     </tr>
                                     <tr class="align-middle">
-                                        <td style="padding-top:0">@purchase.Qty</td>
+                                        <td style="padding-top:0"><b>@purchase.Qty</b></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -122,8 +165,8 @@
                     </div>
                 </div>
             </section>
-            }
-
-
         }
+
+
     }
+}

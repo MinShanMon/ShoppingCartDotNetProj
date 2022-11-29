@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Reflection;
 using Shopping.Models;
 
 namespace Shopping
@@ -334,51 +335,76 @@ namespace Shopping
             }
         }
 
-       
+        public List<string> RetrieveDate(int userId)
+        {
+            List<string> dateList = new List<string>();
+            using (SqlConnection conn = new SqlConnection(this.connectionString))
+            {
+                conn.Open();
+                string sql = string.Format("select distinct([Timestamp]) as date from orders where UserId = {0};",userId);
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    dateList.Add((string)reader["date"].ToString());
+                }
+
+                conn.Close();
+            }
+            return dateList;
+        }
+
+
         public List<PurchasedList> RetrievePurchase(int userId)
         {
             List<PurchasedList> products = new List<PurchasedList>();
             using (SqlConnection conn = new SqlConnection(this.connectionString))
             {
                 conn.Open();
+
+                List<string> dateList= RetrieveDate(userId);
+
+                foreach(string date in dateList)
+                { 
                 string sql = string.Format("select O.Timestamp, p.ProductId, p.ProductPrice, od.Quantity, p.productname, p.[ProductImg]," +
                     " p.productdesc from Orders o inner join OrderDetails od on od.OrderId = o.OrderId inner join Products p on p.ProductId = " +
-                    "od.ProductId where o.UserId = {0}", userId);
+                    "od.ProductId where o.UserId = {0} and O.Timestamp = '{1}'", userId, date);
 
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 SqlDataReader reader = cmd.ExecuteReader();
 
                 List<int> productids = new List<int>();
-                while (reader.Read())
-                {
-                    int currproductid = (int)reader["ProductId"];
-                    if (productids.Contains(currproductid))
+                    while (reader.Read())
                     {
-                        foreach(PurchasedList pdt in products)
+                        int currproductid = (int)reader["ProductId"];
+                        if (productids.Contains(currproductid))
                         {
-                            if (pdt.ProductId == currproductid)
+                            foreach (PurchasedList pdt in products)
                             {
-                                pdt.Qty += (int)reader["Quantity"];
-                                break;
+                                if (pdt.ProductId == currproductid)
+                                {
+                                    pdt.Qty += (int)reader["Quantity"];
+                                    break;
+                                }
                             }
                         }
-                    }
-                    else
-                    {
-                        PurchasedList product = new PurchasedList()
+                        else
                         {
-                            ProductId = (int)reader["ProductId"],
-                            ProductName = (string)reader["ProductName"],
-                            ProductDesc = (string)reader["ProductDesc"],
-                            ProductImg = (string)reader["ProductImg"],
-                            ProductPrice = (decimal)reader["ProductPrice"],
-                            TimeStamp = reader.GetDateTime(0).ToString("D"),
-                            Qty = (int)reader["Quantity"],
-                        };
-                        products.Add(product);
-                        productids.Add(currproductid);
+                            PurchasedList product = new PurchasedList()
+                            {
+                                ProductId = (int)reader["ProductId"],
+                                ProductName = (string)reader["ProductName"],
+                                ProductDesc = (string)reader["ProductDesc"],
+                                ProductImg = (string)reader["ProductImg"],
+                                ProductPrice = (decimal)reader["ProductPrice"],
+                                TimeStamp = reader.GetDateTime(0).ToString("D"),
+                                Qty = (int)reader["Quantity"],
+                            };
+                            products.Add(product);
+                            productids.Add(currproductid);
+                        }
                     }
-
+                   
                 }
                 conn.Close();
 
@@ -387,6 +413,27 @@ namespace Shopping
         }
 
 
+        public string datetimeforActivition(int orderId)
+        {
+            using (SqlConnection conn = new SqlConnection(this.connectionString))
+            {
+                conn.Open();
+
+                string sql = string.Format("select [Timestamp] as date from" +
+                " Orders o inner join OrderDetails od on od.OrderId = o.OrderId " +
+                "inner join Products p on p.ProductId = od.ProductId where o.OrderId = {0}", orderId);
+                 SqlCommand cmd = new SqlCommand(sql, conn);
+                 SqlDataReader reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                    return reader.GetDateTime(0).ToString("D");
+                    }
+                
+                conn.Close();
+            }
+            return "";
+        }
+    
 
         public List<PurchasedActivation> RetrieveActivations(int userId)
         {
@@ -394,20 +441,27 @@ namespace Shopping
             using (SqlConnection conn = new SqlConnection(this.connectionString))
             {
                 conn.Open();
-                string sql = string.Format("select a.ActivationCode, p.productId from Products p " +
-                    "inner join ActivationCodeDetails a on p.ProductId = a.ProductId inner join Orders o on a.OrderId = o.OrderId " +
-                    "inner join Users c on o.UserId = c.UserId where c.UserId = {0}", userId);
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    PurchasedActivation purchased = new PurchasedActivation()
-                    {
-                        ActivationCode = (Guid)reader["ActivationCode"],
-                        ProductId = (int)reader["productId"]
-                    };
-                    purchaseds.Add(purchased);
 
+                List<string> dateList = RetrieveDate(userId);
+
+                foreach (string date in dateList)
+                {
+                    string sql = string.Format("select * from ActivationCodeDetails where orderid in " +
+                    "(select o.OrderId from Orders o inner join OrderDetails od on od.OrderId = o.OrderId " +
+                    "inner join Products p on p.ProductId = od.ProductId " +
+                    "where o.UserId = {0} and O.[Timestamp] = '{1}')", userId, date);
+                    SqlCommand cmd = new SqlCommand(sql, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        PurchasedActivation purchased = new PurchasedActivation()
+                        {
+                            ActivationCode = (Guid)reader["ActivationCode"],
+                            ProductId = (int)reader["productId"],
+                            TimeStamp = (string)datetimeforActivition((int)reader["OrderId"]),
+                        };
+                        purchaseds.Add(purchased);
+                    }
                 }
                 conn.Close();
             }

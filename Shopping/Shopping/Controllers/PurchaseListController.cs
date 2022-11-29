@@ -21,13 +21,14 @@ public class PurchaseListController : Controller
         }
         User user = db.GetUserBySession(Request.Cookies["SessionId"]);
         int userId = user.UserId;
-       
-        List<PurchasedList> products = db.RetrievePurchase(userId);
-        ViewData["pruchaseList"] = products;
-        List<PurchasedActivation> activities = db.RetrieveActivations(userId);
-        ViewData["activities"] = activities;
-        ViewData["username"] = user.Username;
 
+    
+            List<PurchasedList> products = db.RetrievePurchase(userId);
+            ViewData["pruchaseList"] = products;
+            List<PurchasedActivation> activities = db.RetrieveActivations(userId);
+            ViewData["activities"] = activities;
+            ViewData["username"] = user.Username;
+       
         return View();
     }
 

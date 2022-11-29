@@ -134,43 +134,6 @@ function GetTotalPrice(elem, value) {
 
 
 
-//function Checkout() {
-//    let cart = JSON.parse(localStorage["cart"]);
-//    let list = [];
-//    for (const entry in cart) {
-//        if (entry == "totalQuantity") {
-//            continue;
-//        }
-//        if (cart[entry] == 0) {
-//            continue;
-//        }
-//        let order = { ProductId: entry, Quantity: cart[entry] };
-//        list.push(order);
-//    }
-//    let xhr = new XMLHttpRequest();
-//    xhr.open("POST", "/Checkout/Index/");
-//    xhr.setRequestHeader("Content-Type", "application/json; charset=utf8");
-
-//    xhr.onreadystatechange = function () {
-//        if (this.readyState === XMLHttpRequest.DONE) {
-//            if (this.status !== 200) {
-//                return;
-//            }
-
-//            let data = JSON.parse(this.responseText);
-//            if (data.isOkay === false) {
-//                alert("Error. Please try again.")
-//            }
-//            document.location = "/PurchaseList";
-//        }
-//    }
-
-//    let data = JSON.stringify(list);
-//    xhr.send(data);
-//    localStorage.clear();
-//    document.cookie = "items = ;expires=Thu, 01 Jan 1970 00:00:00 UTC; ";
-//}
-
 function Checkout() {
     if (getCookie("SessionId") == null) {
         return;
@@ -238,16 +201,6 @@ function removeItem() {
 }
 
 
-
-//do not like this function
-//need to find another way
-function Redirect() {
-    window.location = "https://localhost:7191/Cart";
-}
-
-
-
-
 function removeCartItem(event) {
     let id = event.target.parentElement.id.substring(2);
     let cart = JSON.parse(localStorage["cart"]);
@@ -268,7 +221,7 @@ function removeCartItem(event) {
     setProductIds();
     if (cart["totalQuantity"] == 0) {
         delete cart["totalQuantity"];
-        Redirect();
+        location.reload();
 
     }
     localStorage["cart"] = JSON.stringify(cart);

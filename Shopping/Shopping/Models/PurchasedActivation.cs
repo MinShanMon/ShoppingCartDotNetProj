@@ -3,7 +3,7 @@
 public class PurchasedActivation
 {
     public Guid ActivationCode { get; set; }
-
     public int ProductId { get; set; }
+    public string TimeStamp { get; set; }
 
 }

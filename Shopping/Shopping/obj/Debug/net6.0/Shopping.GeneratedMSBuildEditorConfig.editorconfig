@@ -8,61 +8,61 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Shopping
 build_property.RootNamespace = Shopping
-build_property.ProjectDir = /Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/
+build_property.ProjectDir = /Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping
+build_property.MSBuildProjectDirectory = /Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/Views/Cart/Index.cshtml]
+[/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/Views/Cart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FydC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/Views/Home/Index.cshtml]
+[/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/Views/Login/Index.cshtml]
+[/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/Views/PurchaseLIst/Index.cshtml]
+[/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/Views/PurchaseLIst/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHVyY2hhc2VMSXN0L0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/Views/Shared/Error.cshtml]
+[/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/Views/_ViewImports.cshtml]
+[/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/Views/_ViewStart.cshtml]
+[/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/Views/Shared/_Alogin.cshtml]
+[/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/Views/Shared/_Alogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19BbG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ugk67ymgzz
 
-[/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/Views/Shared/_Blogincart.cshtml]
+[/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/Views/Shared/_Blogincart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19CbG9naW5jYXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-siw5531f2a
 
-[/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/Views/Shared/_Layout.cshtml]
+[/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-1b44pwcg5f
 
-[/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/Views/Shared/_Login.cshtml]
+[/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/Views/Shared/_Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-56546au49n
 
-[/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/Views/Shared/_PurchaseList.cshtml]
+[/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/Views/Shared/_PurchaseList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19QdXJjaGFzZUxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-vf49n3p0qo
