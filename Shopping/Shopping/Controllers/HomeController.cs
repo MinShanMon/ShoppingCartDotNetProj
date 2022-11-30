@@ -16,24 +16,32 @@ public class HomeController : Controller
 
     public IActionResult Index(string search)
     {
-        if (Request.Cookies["SessionId"] != null)
+        try
         {
-            ViewData["username"] = db.GetUserBySession(Request.Cookies["SessionId"]).Username;
-            ViewBag.Cookies = Request.Cookies["SessionId"];
+            if (Request.Cookies["SessionId"] != null)
+            {
+                ViewData["username"] = db.GetUserBySession(Request.Cookies["SessionId"]).Username;
+                ViewBag.Cookies = Request.Cookies["SessionId"];
+            }
         }
+        catch (Exception e)
+        {
 
-        //defalt homepage(when search box is empty)
-        if (string.IsNullOrEmpty(search))
-        {
-            ViewData["AllProduct"] = db.RetrieveProduct();   
         }
-        else
+        finally
         {
-            //bind search result to view
-            ViewData["AllProduct"] = db.SearchProduct(search);
-            ViewData["search"] = search;
+            //defalt homepage(when search box is empty)
+            if (string.IsNullOrEmpty(search))
+            {
+                ViewData["AllProduct"] = db.RetrieveProduct();
+            }
+            else
+            {
+                //bind search result to view
+                ViewData["AllProduct"] = db.SearchProduct(search);
+                ViewData["search"] = search;
+            }
         }
-           
         return View();
     }
 }

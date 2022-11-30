@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2/EDywWYh8j7tbBB1HHFd/1c47uX3j4zIdHrr1Gu7NQ=",
+  "Hash": "wTSP0Q2qZfr1iW+Q+R6M8WzDFJnu/7DocGv1Y54FMto=",
   "Source": "Shopping",
   "BasePath": "_content/Shopping",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Shopping/wwwroot",
       "Source": "Shopping",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/scopedcss/bundle/Shopping.styles.css",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/obj/Debug/net6.0/scopedcss/bundle/Shopping.styles.css",
       "SourceId": "Shopping",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/scopedcss/bundle/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/obj/Debug/net6.0/scopedcss/bundle/",
       "BasePath": "_content/Shopping",
       "RelativePath": "Shopping.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/scopedcss/bundle/Shopping.styles.css"
+      "OriginalItemSpec": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/obj/Debug/net6.0/scopedcss/bundle/Shopping.styles.css"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/scopedcss/projectbundle/Shopping.bundle.scp.css",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/obj/Debug/net6.0/scopedcss/projectbundle/Shopping.bundle.scp.css",
       "SourceId": "Shopping",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/scopedcss/projectbundle/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/obj/Debug/net6.0/scopedcss/projectbundle/",
       "BasePath": "_content/Shopping",
       "RelativePath": "Shopping.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/obj/Debug/net6.0/scopedcss/projectbundle/Shopping.bundle.scp.css"
+      "OriginalItemSpec": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/obj/Debug/net6.0/scopedcss/projectbundle/Shopping.bundle.scp.css"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/.DS_Store",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/.DS_Store",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": ".DS_Store",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot/.DS_Store"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/css/site.css",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/css/site.css",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/favicon.ico",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/favicon.ico",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/img/analytics.png",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/img/analytics.png",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "img/analytics.png",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot/img/analytics.png"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/img/charts.png",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/img/charts.png",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "img/charts.png",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot/img/charts.png"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/img/logger.png",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/img/logger.png",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "img/logger.png",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot/img/logger.png"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/img/ml.png",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/img/ml.png",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "img/ml.png",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot/img/ml.png"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/img/numerics.png",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/img/numerics.png",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "img/numerics.png",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot/img/numerics.png"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/img/paypal.png",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/img/paypal.png",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "img/paypal.png",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot/img/paypal.png"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/img/star.png",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/img/star.png",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "img/star.png",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot/img/star.png"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/js/cart.js",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/js/cart.js",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "js/cart.js",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot/js/cart.js"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/js/home.js",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/js/home.js",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "js/home.js",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot/js/home.js"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/js/login.js",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/js/login.js",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "js/login.js",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot/js/login.js"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/js/purchaselist.js",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/js/purchaselist.js",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "js/purchaselist.js",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot/js/purchaselist.js"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css.map"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js.map"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/bootstrap/LICENSE",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/bootstrap/LICENSE",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/LICENSE"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/jquery-validation/dist/additional-methods.js",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.js"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.min.js"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.js"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/jquery-validation/LICENSE.md",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/jquery-validation/LICENSE.md",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/LICENSE.md"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/jquery/dist/jquery.js",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/jquery/dist/jquery.js",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.js"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/jquery/dist/jquery.min.js",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/jquery/dist/jquery.min.js",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.js"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/jquery/dist/jquery.min.map",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/jquery/dist/jquery.min.map",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.map"
     },
     {
-      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/lib/jquery/LICENSE.txt",
+      "Identity": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/lib/jquery/LICENSE.txt",
       "SourceId": "Shopping",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan 3/Shopping/wwwroot/",
+      "ContentRoot": "/Users/soelapyaehtun/Downloads/final_by_travis_Checkoutfix_by_Ivan/Shopping/wwwroot/",
       "BasePath": "_content/Shopping",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",

@@ -346,7 +346,7 @@ namespace Shopping
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    dateList.Add((string)reader["date"].ToString());
+                    dateList.Add((string)reader.GetDateTime(0).ToString("s"));
                 }
 
                 conn.Close();

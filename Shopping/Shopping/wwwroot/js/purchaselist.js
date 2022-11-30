@@ -55,7 +55,7 @@ function onStarClick(event) {
     var clas = document.getElementsByClassName("star_" + event.target.value);
     for (let i = 0; i < clas.length; i++) {
         clas[i].classList.remove('selected');
-        location.reload();
+        //location.reload();
     }
     event.target.parentElement.classList.add('selected');
     SetStarRating(event.target.value, id);
