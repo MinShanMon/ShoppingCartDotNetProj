@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/soelapyaehtun/Downloads/Team#3/Shopping/Shopping.csproj": {}
+    "/Users/oscar/dotnetproject/Team-3_ShoppingWebsite-ASP.NET-/Shopping/Shopping/Shopping.csproj": {}
   },
   "projects": {
-    "/Users/soelapyaehtun/Downloads/Team#3/Shopping/Shopping.csproj": {
+    "/Users/oscar/dotnetproject/Team-3_ShoppingWebsite-ASP.NET-/Shopping/Shopping/Shopping.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/soelapyaehtun/Downloads/Team#3/Shopping/Shopping.csproj",
+        "projectUniqueName": "/Users/oscar/dotnetproject/Team-3_ShoppingWebsite-ASP.NET-/Shopping/Shopping/Shopping.csproj",
         "projectName": "Shopping",
-        "projectPath": "/Users/soelapyaehtun/Downloads/Team#3/Shopping/Shopping.csproj",
-        "packagesPath": "/Users/soelapyaehtun/.nuget/packages/",
-        "outputPath": "/Users/soelapyaehtun/Downloads/Team#3/Shopping/obj/",
+        "projectPath": "/Users/oscar/dotnetproject/Team-3_ShoppingWebsite-ASP.NET-/Shopping/Shopping/Shopping.csproj",
+        "packagesPath": "/Users/oscar/.nuget/packages/",
+        "outputPath": "/Users/oscar/dotnetproject/Team-3_ShoppingWebsite-ASP.NET-/Shopping/Shopping/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/soelapyaehtun/.nuget/NuGet/NuGet.Config"
+          "/Users/oscar/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -62,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
         }
       }
     }
